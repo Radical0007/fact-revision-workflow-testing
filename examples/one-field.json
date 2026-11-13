@@ -1,0 +1,57 @@
+{
+  "before": {
+    "version": 4,
+    "path": ["exercise-opened"],
+    "title": "Paper lantern drill",
+    "location": "Model room A",
+    "occurredAt": "2035-01-02T09:00:00Z",
+    "studentName": "Demo character",
+    "studentNo": "FICTITIOUS",
+    "college": "Imaginary campus",
+    "description": "A cardboard lantern moved between two model rooms.",
+    "initialAction": "Placed a marker.",
+    "peopleCount": 1,
+    "injuredCount": 0,
+    "ongoing": false
+  },
+  "patch": {
+    "version": 4,
+    "location": " Model room B "
+  },
+  "patchResponse": {
+    "status": 200,
+    "body": {
+      "version": 5,
+      "path": ["exercise-opened"],
+      "title": "Paper lantern drill",
+      "location": "Model room B",
+      "occurredAt": "2035-01-02T09:00:00Z",
+      "studentName": "Demo character",
+      "studentNo": "FICTITIOUS",
+      "college": "Imaginary campus",
+      "description": "A cardboard lantern moved between two model rooms.",
+      "initialAction": "Placed a marker.",
+      "peopleCount": 1,
+      "injuredCount": 0,
+      "ongoing": false
+    }
+  },
+  "getResponse": {
+    "status": 200,
+    "body": {
+      "version": 5,
+      "path": ["exercise-opened"],
+      "title": "Paper lantern drill",
+      "location": "Model room B",
+      "occurredAt": "2035-01-02T09:00:00Z",
+      "studentName": "Demo character",
+      "studentNo": "FICTITIOUS",
+      "college": "Imaginary campus",
+      "description": "A cardboard lantern moved between two model rooms.",
+      "initialAction": "Placed a marker.",
+      "peopleCount": 1,
+      "injuredCount": 0,
+      "ongoing": false
+    }
+  }
+}

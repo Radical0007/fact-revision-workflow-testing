@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-11",
+  "study": "Post-hoc bounded exhaustive diagnostic of approval reference checkers",
+  "status": "Protocol frozen before enumeration; informed by a manually identified artifact-ABA counterexample. Not preregistered or blind discovery.",
+  "operations": ["x=0", "x=1", "y=0", "y=1", "artifact=A", "artifact=B", "admin++"],
+  "initial": {"facts":{"x":0,"y":0},"artifact":"A","fact_revisions":{"x":0,"y":0},"artifact_revision":0,"global_version":1,"approved":true},
+  "lengths": [0,1,2,3,4],
+  "expected_operation_sequences": 2801,
+  "completeness_strata": [true,false],
+  "dependency_semantics": "Complete stratum declares x and y. Incomplete stratum declares x only and exposes completeness=false. All aware checkers return unknown there, while the full experimental oracle knows x and y.",
+  "mutation_semantics": "An actual x/y value change increments its revision and global version; equal-value writes do not. An actual artifact change increments artifact revision but not the global version. admin++ increments only the global version. No fresh confirmation occurs.",
+  "contracts": {"current_view":"Accept if current x,y and artifact equal the approved values.","history_sensitive":"Any actual relevant fact or artifact change permanently revokes the original confirmation, even if an ABA restores its value."},
+  "original_monitors": "Read-only import of the four functions from research/trace-benchmark/benchmark.py; no original generator or replay/oracle function is called.",
+  "supplemental_monitor": "fact_and_artifact_revision_stamps: the history-sensitive revision token includes both fact-dependency revisions and artifact revision. This is a corrected simple reference checker, not a new application algorithm.",
+  "independence": "Observation construction and the two oracle replays are separate functions in this supplementary module; neither oracle calls any original or supplemental monitor.",
+  "claims": ["A finite bounded comparison and minimal counterexample record", "The reference-checker defect is not a second real application bug", "No modification of original trace benchmark source or results", "No claim of correctness beyond this operation algebra, assumptions, completeness strata and maximum length"]
+}

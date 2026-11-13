@@ -1,0 +1,6 @@
+checker,sequences,valid,invalid,false_accepts,false_rejects,unknown
+never_invalidate,2801,341,2460,2460,0,0
+global_version_equality,2801,341,2460,220,220,0
+content_projection,2801,341,2460,348,0,0
+dependency_revision_stamps,2801,341,2460,110,0,0
+fact_and_artifact_revision_stamps,2801,341,2460,0,0,0
